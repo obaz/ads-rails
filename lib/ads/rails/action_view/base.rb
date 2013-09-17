@@ -16,7 +16,7 @@ module Ads
               google_ad_height = #{options[:height]};
             SCRIPT
             content_tag(:script, script.html_safe, type: 'text/javascript') +
-            content_tag(:script, nil, type: 'text/javascript', src: "#{request.protocol}://pagead2.googlesyndication.com/pagead/show_ads.js")
+            content_tag(:script, nil, type: 'text/javascript', src: "#{request.protocol}pagead2.googlesyndication.com/pagead/show_ads.js")
           end
         end
 
